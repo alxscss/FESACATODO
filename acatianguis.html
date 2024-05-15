@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACAtianguis - Mercancía Oficial</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos_comunes.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+          ☰
+        </div>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acafe.html">Acafe</a></li>
+          <li><a href="acatianguis.html">Acatianguis</a></li>
+          <li><a href="pumamor.html">PumAmor</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+          <li><a href="pumabus.html">Pumabus</a></li>
+          <li><a href="pumamigo.html">Pumamigo</a></li>
+          <li><a href="acaencargos.html">ACAencargos</a></li>
+          <li><a href="rentaca.html">Rentaca</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="logo-acatodo.jpg" alt="Logo AcaTodo" class="logo">
+        <div class="header-right">
+            <div id="icono-notificaciones">🔔</div>
+            <button id="boton-usuario" onclick="window.location.href='acatodo.html';" title="Iniciar sesión">
+                <span>👤</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="product-list">
+            <h2>Productos</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="img/tianguis/bufanda - copia.jpg" >
+                    <h3>Bufanda</h3>
+                    <p>$300.00 MXN</p>
+                    <button class="buy-button" onclik="ComprarProducto('Bufanda')" >Comprar</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="img/tianguis/chamarra.jpg" alt="Producto 2">
+                    <h3>Chamarra</h3>
+                    <p>$1,350.00 MXN</p>
+                    <button class="buy-button" onclik="ComprarProducto('Chamarra')" >Comprar</button>
+
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="img/tianguis/sudadera1.jpg" alt="Producto 3">
+                    <h3>Impermeable</h3>
+                    <p>$950.00 MXN</p>
+                    <button class="buy-button" onclik="ComprarProducto('Impermeable')" >Comprar</button>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="img/tianguis/chamarra2.jpg" alt="Producto 4">
+                    <h3>Hoodie</h3>
+                    <p>$799.00 MXN</p>
+                    <button class="buy-button" onclik="ComprarProducto('Hoodie')" >Comprar</button>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <img src="img/tianguis/playeramulti.jpg" alt="Producto 5">
+                    <h3>Playera</h3>
+                    <p>$499.00 MXN</p>
+                    <button class="buy-button" onclik="ComprarProducto('Playera')" >Comprar</button>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <img src="img/tianguis/chamarra.3jpg.jpg" alt="Producto 6">
+                    <h3>Chamarra vino</h3>
+                    <p>$899.00 MXN</p>
+                    <button class="buy-button" onclik="ComprarProducto('Chmarra vino')" >Comprar</button>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <img src="img/tianguis/chamarra4.jpg" alt="Producto 7">
+                    <h3>Sudadera </h3>
+                    <p>$689.00 MXN</p>
+                    <button class="buy-button" onclik="ComprarProducto('Sudadera')" >Comprar</button>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <img src="img/tianguis/poloun.jpg" alt="Producto 8">
+                    <h3>Camisa Polo</h3>
+                    <p>$399.00 MXN</p>
+                    <button class="buy-button" onclik="ComprarProducto('Camisa polo')" >Comprar</button>
+                </div>
+                <!-- Product 9 -->
+                <div class="product-card">
+                    <img src="img/tianguis/playera2.jpg" alt="Producto 9">
+                    <h3>Jersey pumas</h3>
+                    <p>$550.00 MXN</p>
+                    <button class="buy-button" onclik="ComprarProducto('Jersey pumas')" >Comprar</button>
+                </div>
+                <!-- Product 10 -->
+                <div class="product-card">
+                    <img src="img/tianguis/calcetines.jpg" alt="Calcetines">
+                    <h3>Calcetines</h3>
+                    <p>$120.00 MXN</p>
+                    <button class="buy-button" onclik="ComprarProducto('Calcetines')" >Comprar</button>
+                </div>
+                <!-- Product 11 -->
+                <div class="product-card">
+                    <img src="img/tianguis/imper1.jpg" alt="Producto 11">
+                    <h3>Sudadera</h3>
+                    <p>$730.00 MXN</p>
+                    <button class="buy-button" onclik="ComprarProducto('Sudadera')" >Comprar</button>
+                </div>
+                <!-- Product 12 -->
+                <div class="product-card">
+                    <img src="img/tianguis/gorra.jpg" alt="Producto 12">
+                    <h3>Gorra</h3>
+                    <p>$160.00 MXN</p>
+                    <button class="buy-button" onclik="ComprarProducto('Gorra')" >Comprar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Derechos reservados © AcaTodo 2024</p>
+    </footer>
+    <script src="Acatodo.js"></script>
+
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function () {
+        var navList = document.getElementById('nav-list');
+        navList.classList.toggle('active');
+      });
+    </script>
+</body>
+</html>

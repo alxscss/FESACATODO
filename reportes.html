@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes Acatlán - AcaTodo</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos_comunes.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+          ☰
+        </div>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acafe.html">Acafe</a></li>
+          <li><a href="acatianguis.html">Acatianguis</a></li>
+          <li><a href="pumamor.html">PumAmor</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+          <li><a href="pumabus.html">Pumabus</a></li>
+          <li><a href="pumamigo.html">Pumamigo</a></li>
+          <li><a href="acaencargos.html">ACAencargos</a></li>
+          <li><a href="rentaca.html">Rentaca</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="logo-acatodo.jpg" alt="Logo AcaTodo" class="logo">
+        <div class="header-right">
+            <div id="icono-notificaciones">🔔</div>
+            <button id="boton-usuario" onclick="window.location.href='acatodo.html';" title="Iniciar sesión">
+                <span>👤</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section id="reportes">
+            <h2>Reportes Acatlán</h2>
+            <form id="form-reporte" action="#" method="POST">
+                <label for="descripcion-reporte">Ingresa tu reporte:</label>
+                <textarea id="descripcion-reporte" rows="4" required></textarea>
+                
+                <label for="salon-reporte">Salón donde se realizará:</label>
+                <input type="text" id="salon-reporte" required>
+                
+                <label for="carrera-reporte">Carrera:</label>
+                <input type="text" id="carrera-reporte" required>
+                
+                <button type="button" id="enviar-reporte" onclick="confirmarEnvio()">Enviar Reporte</button>
+            </form>
+        </section>
+    </main>
+    <script src="Acatodo.js"></script>
+<script>
+    document.getElementById('mobile-menu').addEventListener('click', function () {
+    var navList = document.getElementById('nav-list');
+    navList.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
